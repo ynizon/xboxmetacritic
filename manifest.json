@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Metacritic on Xbox Game Pass",
+  "version": "1.0",
+  "author": "Yohann Nizon",
+  "description": "Show meta critic notes on Xbox game Pass website",
+  "permissions":["tabs","activeTab","webRequest","storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.xbox.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html",
+    "default_title": "Show meta critic notes on Xbox game Pass website."
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}
