@@ -1,4 +1,4 @@
-# Chrome-Extension-Base-Template
+# Chrome-Extension Metacritic on Xbox Game Pass
 This is a Chrome Extension to get informations from Metacritic.com and showing the on
 https://www.xbox.com/ on the game pass list, with a MIT license.
 
