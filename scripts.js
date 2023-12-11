@@ -9,7 +9,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             const url = 'https://www.metacritic.com/search/' + encodeURI(title)+"/";
             //alert(url);
             //console.log(url);
-
             fetch(url)
                 .then(response => {
                     if (!response.ok) {

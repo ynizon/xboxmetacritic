@@ -4,8 +4,8 @@
   "version": "1.0",
   "author": "Yohann Nizon",
   "description": "Show meta critic notes on Xbox game Pass website",
-  "permissions":["tabs","activeTab","webRequest","storage"],
-  "host_permissions": ["<all_urls>"],
+  "permissions":[],
+  "host_permissions": ["https://www.metacritic.com/"],
   "content_scripts": [
     {
       "matches": [
@@ -20,7 +20,7 @@
   "action": {
     "default_icon": "logo.png",
     "default_popup": "index.html",
-    "default_title": "Show meta critic notes on Xbox game Pass website."
+    "default_title": "Show meta critic notes on Xbox game Pass website (https://www.xbox.com/)."
   },
   "icons": {
     "16": "logo.png",
